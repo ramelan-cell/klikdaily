@@ -9,7 +9,7 @@ void main() {
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Application",
-      initialRoute: Routes.CART,
+      initialRoute: Routes.HOME,
       getPages: AppPages.routes,
     ),
   );

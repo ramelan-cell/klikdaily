@@ -133,7 +133,7 @@ class Location {
   String? city;
   String? state;
   String? country;
-  int? postcode;
+  String? postcode;
   Coordinates? coordinates;
   Timezone? timezone;
 
@@ -152,7 +152,7 @@ class Location {
     city = json['city'];
     state = json['state'];
     country = json['country'];
-    postcode = json['postcode'];
+    postcode = json['postcode'].toString();
     coordinates = json['coordinates'] != null
         ? new Coordinates.fromJson(json['coordinates'])
         : null;
@@ -181,13 +181,13 @@ class Location {
 }
 
 class Street {
-  int? number;
+  String? number;
   String? name;
 
   Street({this.number, this.name});
 
   Street.fromJson(Map<String, dynamic> json) {
-    number = json['number'];
+    number = json['number'].toString();
     name = json['name'];
   }
 
@@ -280,13 +280,13 @@ class Login {
 
 class Dob {
   String? date;
-  int? age;
+  String? age;
 
   Dob({this.date, this.age});
 
   Dob.fromJson(Map<String, dynamic> json) {
     date = json['date'];
-    age = json['age'];
+    age = json['age'].toString();
   }
 
   Map<String, dynamic> toJson() {
@@ -340,17 +340,17 @@ class Picture {
 
 class Info {
   String? seed;
-  int? results;
-  int? page;
+  String? results;
+  String? page;
   String? version;
 
   Info({this.seed, this.results, this.page, this.version});
 
   Info.fromJson(Map<String, dynamic> json) {
     seed = json['seed'];
-    results = json['results'];
-    page = json['page'];
-    version = json['version'];
+    results = json['results'].toString();
+    page = json['page'].toString();
+    version = json['version'].toString();
   }
 
   Map<String, dynamic> toJson() {

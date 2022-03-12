@@ -6,11 +6,13 @@ class ProfileController extends GetxController {
   final count = 0.obs;
   @override
   void onInit() {
+    print('123');
     super.onInit();
   }
 
   @override
   void onReady() {
+    print('abc');
     super.onReady();
   }
 

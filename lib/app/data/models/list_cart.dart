@@ -4,7 +4,7 @@ class ListCart {
   String? nama;
   String? harga;
   String? satuan;
-  String? qty;
+  int? qty;
   String? total;
   String? rate;
 
@@ -25,7 +25,7 @@ class ListCart {
     nama = json['nama'];
     harga = json['harga'];
     satuan = json['satuan'];
-    qty = json["qty"];
+    qty = int.parse(json["qty"]);
     total = json["total"];
     rate = json['rate'];
   }
