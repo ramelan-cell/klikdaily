@@ -8,3 +8,4 @@ Aplikasi ini dibuat untuk mengikuti tes di perusahaan sebagai bahan pertimbangan
 dimana aplikasi ini terdapat 3 page yaitu home , cart dan profile mengikuti tampilan sebagai berikut.
 
 
+
